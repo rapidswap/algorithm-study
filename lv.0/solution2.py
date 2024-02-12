@@ -5,3 +5,4 @@ def solution(arr, queries):
             if i % k == 0:
                 arr[i] += 1
     return arr
+#..
