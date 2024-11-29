@@ -1,3 +1,4 @@
+#include<bits/stdc++.h>
 void minimumBribes(vector<int> q) {
     int cnt=0;
     bool ischao =false;
