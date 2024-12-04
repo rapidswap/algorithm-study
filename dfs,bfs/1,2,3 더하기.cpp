@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-
+ 
 vector<int> answer;
 int cnt = 0;
 
