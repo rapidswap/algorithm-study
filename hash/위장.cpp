@@ -5,7 +5,7 @@
 using namespace std;
 
 int solution(vector<vector<string>> clothes) {
-    unordered_map<string, int> map;
+    unordered_map<string, int> map;//정렬 필요 없음
     for (vector<string> clothe : clothes)
     {
         map[clothe[1]]++;
