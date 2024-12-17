@@ -4,7 +4,7 @@
 #include<iostream>
 using namespace std;
 
-int dp[500][500];
+int dp[500][500]; 
 int solution(vector<vector<int>> triangle) {
     int answer = 0;
     dp[0][0]=triangle[0][0];
