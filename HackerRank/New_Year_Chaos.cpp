@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 void minimumBribes(vector<int> q) {
     int cnt=0;
-    bool ischao =false;
+    bool ischao =false; 
     for(int i = 0; i< q.size(); i++)
     {
         if(q[i]>i+3){ 
