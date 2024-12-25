@@ -9,7 +9,7 @@ void minimumBribes(vector<int> q) {
             ischao=true;
             break;
         }
-        else{
+        else{ 
             for(int j = q[i]-2 > 0? q[i]-2:0; j<i; j++)
                 if(q[j]>q[i]) cnt++;
         }
