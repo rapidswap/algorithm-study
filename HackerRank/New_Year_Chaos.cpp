@@ -6,7 +6,7 @@ void minimumBribes(vector<int> q) {
     for(int i = 0; i< q.size(); i++)
     {
         if(q[i]>i+3){ 
-            cout<<"Too chaotic"<<endl;
+            cout<<"Too chaotic"<<endl;  
             ischao=true;
             break;
         }
