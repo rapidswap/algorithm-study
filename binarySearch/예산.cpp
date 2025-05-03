@@ -6,7 +6,7 @@
 using namespace std;
 
 int st, ed, mid;
-int goverment;
+int government;
 bool check_money(vector<int> v, int money) {
 	int all=0;
 	for (int i = 0; i < v.size(); i++) {
@@ -17,7 +17,7 @@ bool check_money(vector<int> v, int money) {
 			all += money;
 		}
 	}
-	return all <= goverment;
+	return all <= government;
 }
 int main()
 {
@@ -36,7 +36,7 @@ int main()
 	}
 
 
-	cin >> goverment;
+	cin >> government;
 
 	st = 1;
 	ed = *max_element(budget.begin(),budget.end());
