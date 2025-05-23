@@ -30,6 +30,29 @@ int main() {
 
     int minPotion = INT_MAX;
     
+    int st = 0;
+    int ed = n - 1;
+    while (st < ed) {
+        
+        if (0 > potion[st] + potion[ed]) {
+            if (minPotion > abs(potion[st] + potion[ed])) {
+                minPotion = abs(potion[st] + potion[ed]);
+                cur[0] = potion[st];
+                cur[1] = potion[ed];
+            }
+            st++;
+        }
+        else {
+            if (minPotion > abs(potion[st] + potion[ed])) {
+                minPotion = abs(potion[st] + potion[ed]);
+                cur[0] = potion[st];
+                cur[1] = potion[ed];
+            }
+            ed--;
+        }
+        if (minPotion == 0) break;
+    }
+    
     /*for (int i = 0; i < n; i++) {
         int st = 0;
         int ed = n - 1;
