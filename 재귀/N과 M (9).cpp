@@ -24,7 +24,7 @@ void func(int cnt)
             arr[cnt] = num[i];
             last = arr[cnt];
             chk[i] = true;
-            dfs(cnt + 1);
+            func(cnt + 1);
             chk[i] = false;
         }
     }
